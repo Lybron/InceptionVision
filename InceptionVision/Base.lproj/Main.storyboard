@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8OY-20-fWP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1gE-bm-wyd">
+            <objects>
+                <viewController id="8OY-20-fWP" customClass="ViewController" customModule="InceptionVision" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8n3-Oe-Tef"/>
+                        <viewControllerLayoutGuide type="bottom" id="CkJ-Cw-xfx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pmo-49-kZH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Probability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FX4-4c-TFg">
+                                <rect key="frame" x="141.5" y="623" width="92.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classification Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vlU-kr-EtS">
+                                <rect key="frame" x="102.5" y="591" width="169.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRZ-3E-N2A">
+                                <rect key="frame" x="16" y="20" width="343" height="563"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FX4-4c-TFg" firstAttribute="top" secondItem="vlU-kr-EtS" secondAttribute="bottom" constant="8" id="1NR-DU-DGf"/>
+                            <constraint firstItem="CkJ-Cw-xfx" firstAttribute="top" secondItem="FX4-4c-TFg" secondAttribute="bottom" constant="20" id="dO6-cL-CVQ"/>
+                            <constraint firstItem="vlU-kr-EtS" firstAttribute="centerX" secondItem="Pmo-49-kZH" secondAttribute="centerX" id="nvm-PT-8qB"/>
+                            <constraint firstItem="FX4-4c-TFg" firstAttribute="centerX" secondItem="Pmo-49-kZH" secondAttribute="centerX" id="tBz-97-kpS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraPreview" destination="CRZ-3E-N2A" id="zuc-Y0-kop"/>
+                        <outlet property="classificationLabel" destination="vlU-kr-EtS" id="l4L-44-JNy"/>
+                        <outlet property="probabilityLabel" destination="FX4-4c-TFg" id="m3T-Lm-QdD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPo-Bi-QMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210.40000000000001" y="213.64317841079463"/>
+        </scene>
+    </scenes>
+</document>

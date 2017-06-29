@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EA9E3EB1F0495E5000B9ACE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9E3EA1F0495E5000B9ACE /* AppDelegate.swift */; };
+		7EA9E3ED1F0495E5000B9ACE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9E3EC1F0495E5000B9ACE /* ViewController.swift */; };
+		7EA9E3F21F0495E5000B9ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA9E3F11F0495E5000B9ACE /* Assets.xcassets */; };
+		7EA9E3F51F0495E5000B9ACE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA9E3F31F0495E5000B9ACE /* LaunchScreen.storyboard */; };
+		7EA9E3FD1F049665000B9ACE /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9E3FC1F049665000B9ACE /* Inceptionv3.mlmodel */; };
+		7EA9E4091F049DD0000B9ACE /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9E4041F049DCF000B9ACE /* AVCaptureDevice+Extension.swift */; };
+		7EA9E40A1F049DD0000B9ACE /* UIImage+Processing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9E4051F049DCF000B9ACE /* UIImage+Processing.swift */; };
+		7EA9E40B1F049DD0000B9ACE /* ClassifyVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9E4061F049DD0000B9ACE /* ClassifyVideoView.swift */; };
+		7EA9E40C1F049DD0000B9ACE /* VideoCameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9E4071F049DD0000B9ACE /* VideoCameraType.swift */; };
+		7EA9E40D1F049DD0000B9ACE /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA9E4081F049DD0000B9ACE /* VideoCapture.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7EA9E3E71F0495E5000B9ACE /* InceptionVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InceptionVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA9E3EA1F0495E5000B9ACE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7EA9E3EC1F0495E5000B9ACE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EA9E3F11F0495E5000B9ACE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EA9E3F41F0495E5000B9ACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EA9E3F61F0495E5000B9ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EA9E3FC1F049665000B9ACE /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		7EA9E4041F049DCF000B9ACE /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
+		7EA9E4051F049DCF000B9ACE /* UIImage+Processing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Processing.swift"; sourceTree = "<group>"; };
+		7EA9E4061F049DD0000B9ACE /* ClassifyVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyVideoView.swift; sourceTree = "<group>"; };
+		7EA9E4071F049DD0000B9ACE /* VideoCameraType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCameraType.swift; sourceTree = "<group>"; };
+		7EA9E4081F049DD0000B9ACE /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EA9E3E41F0495E5000B9ACE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E8CDBFF1F04BA1400E0F1B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7EA9E3FC1F049665000B9ACE /* Inceptionv3.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E8CDC001F04BA2300E0F1B1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7EA9E3EC1F0495E5000B9ACE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7EA9E3DE1F0495E5000B9ACE = {
+			isa = PBXGroup;
+			children = (
+				7EA9E3E91F0495E5000B9ACE /* InceptionVision */,
+				7EA9E3E81F0495E5000B9ACE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7EA9E3E81F0495E5000B9ACE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EA9E3E71F0495E5000B9ACE /* InceptionVision.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EA9E3E91F0495E5000B9ACE /* InceptionVision */ = {
+			isa = PBXGroup;
+			children = (
+				7EA9E3EA1F0495E5000B9ACE /* AppDelegate.swift */,
+				7E8CDC001F04BA2300E0F1B1 /* Controllers */,
+				7EA9E40E1F049DE7000B9ACE /* Video */,
+				7E8CDBFF1F04BA1400E0F1B1 /* Model */,
+				7EA9E3F11F0495E5000B9ACE /* Assets.xcassets */,
+				7EA9E3F31F0495E5000B9ACE /* LaunchScreen.storyboard */,
+				7EA9E3F61F0495E5000B9ACE /* Info.plist */,
+			);
+			path = InceptionVision;
+			sourceTree = "<group>";
+		};
+		7EA9E40E1F049DE7000B9ACE /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				7EA9E4041F049DCF000B9ACE /* AVCaptureDevice+Extension.swift */,
+				7EA9E4061F049DD0000B9ACE /* ClassifyVideoView.swift */,
+				7EA9E4051F049DCF000B9ACE /* UIImage+Processing.swift */,
+				7EA9E4071F049DD0000B9ACE /* VideoCameraType.swift */,
+				7EA9E4081F049DD0000B9ACE /* VideoCapture.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EA9E3E61F0495E5000B9ACE /* InceptionVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EA9E3F91F0495E5000B9ACE /* Build configuration list for PBXNativeTarget "InceptionVision" */;
+			buildPhases = (
+				7EA9E3E31F0495E5000B9ACE /* Sources */,
+				7EA9E3E41F0495E5000B9ACE /* Frameworks */,
+				7EA9E3E51F0495E5000B9ACE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InceptionVision;
+			productName = InceptionVision;
+			productReference = 7EA9E3E71F0495E5000B9ACE /* InceptionVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EA9E3DF1F0495E5000B9ACE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Lybron Sobers";
+				TargetAttributes = {
+					7EA9E3E61F0495E5000B9ACE = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 7EA9E3E21F0495E5000B9ACE /* Build configuration list for PBXProject "InceptionVision" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EA9E3DE1F0495E5000B9ACE;
+			productRefGroup = 7EA9E3E81F0495E5000B9ACE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EA9E3E61F0495E5000B9ACE /* InceptionVision */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EA9E3E51F0495E5000B9ACE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA9E3F51F0495E5000B9ACE /* LaunchScreen.storyboard in Resources */,
+				7EA9E3F21F0495E5000B9ACE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EA9E3E31F0495E5000B9ACE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EA9E3ED1F0495E5000B9ACE /* ViewController.swift in Sources */,
+				7EA9E3FD1F049665000B9ACE /* Inceptionv3.mlmodel in Sources */,
+				7EA9E40C1F049DD0000B9ACE /* VideoCameraType.swift in Sources */,
+				7EA9E40D1F049DD0000B9ACE /* VideoCapture.swift in Sources */,
+				7EA9E40B1F049DD0000B9ACE /* ClassifyVideoView.swift in Sources */,
+				7EA9E4091F049DD0000B9ACE /* AVCaptureDevice+Extension.swift in Sources */,
+				7EA9E40A1F049DD0000B9ACE /* UIImage+Processing.swift in Sources */,
+				7EA9E3EB1F0495E5000B9ACE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EA9E3F31F0495E5000B9ACE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EA9E3F41F0495E5000B9ACE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EA9E3F71F0495E5000B9ACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7EA9E3F81F0495E5000B9ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EA9E3FA1F0495E5000B9ACE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T33949GAHU;
+				INFOPLIST_FILE = InceptionVision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifunography.InceptionVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EA9E3FB1F0495E5000B9ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T33949GAHU;
+				INFOPLIST_FILE = InceptionVision/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ifunography.InceptionVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EA9E3E21F0495E5000B9ACE /* Build configuration list for PBXProject "InceptionVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA9E3F71F0495E5000B9ACE /* Debug */,
+				7EA9E3F81F0495E5000B9ACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EA9E3F91F0495E5000B9ACE /* Build configuration list for PBXNativeTarget "InceptionVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EA9E3FA1F0495E5000B9ACE /* Debug */,
+				7EA9E3FB1F0495E5000B9ACE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EA9E3DF1F0495E5000B9ACE /* Project object */;
+}
